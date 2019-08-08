@@ -17,6 +17,8 @@ depending on the application / library the application uses:
 - `~/.local/share/application/default.list` (the older deprecated location)
 - `~/.local/share/applications/mimeinfo.cache` (the cache)
 
+
+
 I've been doing some [work on custom URL handlers](https://github.com/nbeaver/thunderlink-install-guide)
 lately, so I've adapted some of that for this purpose.
 Here are the instructions:
@@ -41,7 +43,7 @@ Here are the instructions:
                 firefox.desktop
                 chromium-browser.desktop
 
-0. Write a [script that parses the URLs and launches the appropriate browser](https://github.com/nbeaver/askubuntu-custom-http-url-handler/blob/2df6569ef641120d69b4d14aa40086be9d93dd7a/http_url_handler.py).
+0. Write a [script that parses the URL and launches the appropriate browser](https://github.com/nbeaver/askubuntu-custom-http-url-handler/blob/2df6569ef641120d69b4d14aa40086be9d93dd7a/http_url_handler.py).
 
    I prefer to use Python,
    since it has libraries to parse URLs and send errors to syslog.
@@ -135,7 +137,7 @@ Here are the instructions:
    and add this to `~/.profile`
    (note [you will need to log out and log in again to see changes](https://askubuntu.com/questions/59126/reload-bashs-profile-without-logging-out-and-back-in-again)):
 
-        PATH="$HOME/local/bin:$PATH"
+        PATH="$HOME/bin:$PATH"
 
    and finally either copy or symlink the script to `~/bin`:
 
@@ -233,7 +235,7 @@ Here are the instructions:
         x-scheme-handler/http=http-url-handler.desktop
         x-scheme-handler/https=http-url-handler.desktop
    
-   under the "[Default Applications]" group.
+   under the `[Default Applications]` group.
 
 0. Check if it was successfully registered.
 
