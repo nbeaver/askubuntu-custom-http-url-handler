@@ -3,4 +3,4 @@ quick-test :
 	./http_url_handler.py 'https://superuser.com/questions/688063/is-there-a-way-to-redirect-certain-urls-to-specific-web-browsers-in-linux/'
 
 install-desktop-file :
-	desktop-file-install --dir="~/.local/share/applications" 'http-url-handler.desktop'
+	desktop-file-install --dir="$(HOME)/.local/share/applications" 'http-url-handler.desktop'
