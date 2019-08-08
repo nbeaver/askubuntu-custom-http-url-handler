@@ -304,3 +304,5 @@ Here are the instructions:
        $ update-desktop-database ~/.local/share/applications/
 
 The whole project is on Github here:
+
+<https://github.com/nbeaver/askubuntu-custom-http-url-handler>
