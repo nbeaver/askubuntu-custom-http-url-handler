@@ -139,7 +139,7 @@ Here are the instructions:
 
    and finally either copy or symlink the script to `~/bin`:
 
-       $ ln -s $PWD/http_url_handler.py ~/bin/
+        $ ln -s $PWD/http_url_handler.py ~/bin/
 
    If you did this properly, you should see this:
 
@@ -277,6 +277,13 @@ Here are the instructions:
                 http-url-handler.desktop
                 firefox.desktop
                 chromium-browser.desktop
+
+   Check `xdg-mime` also.
+
+        $ xdg-mime query default x-scheme-handler/http
+        http-url-handler.desktop
+        $ xdg-mime query default x-scheme-handler/https
+        http-url-handler.desktop
 
 0. Test some URLs.
 
