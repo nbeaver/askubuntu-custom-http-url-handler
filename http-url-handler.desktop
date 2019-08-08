@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=HTTP URL handler
-Comment=Open an HTTP/HTTPS URL with a selectable browser
+Comment=Open an HTTP/HTTPS URL with a particular browser
 TryExec=http_url_handler.py
 Exec=http_url_handler.py %u
 X-MultipleArgs=false
