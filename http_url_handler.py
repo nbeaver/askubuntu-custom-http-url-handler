@@ -52,6 +52,7 @@ if __name__ == '__main__':
     logging.basicConfig(level=args.loglevel)
     logging.debug("args.url = '{}'".format(args.url))
     parsed = urlparse(args.url)
+    logging.info("hostname = '{}'".format(parsed.hostname))
     if parsed.hostname == 'askubuntu.com':
         browser = 'firefox'
     else:
