@@ -13,11 +13,9 @@ is that there are at least four files the associations might be stored in,
 depending on the application / library the application uses:
 
 - `~/.config/mimeapps.list` (the right place to make changes)
-- `~/.local/share/application/mimeapps.list` (the deprecated location)
-- `~/.local/share/application/defaults.list` (the older deprecated location)
+- `~/.local/share/application/mimeapps.list` (the [deprecated location](https://standards.freedesktop.org/mime-apps-spec/1.0.1/ar01s02.html))
+- `~/.local/share/application/defaults.list` (the older [deprecated location](https://lists.freedesktop.org/archives/xdg/2014-February/013177.html))
 - `~/.local/share/applications/mimeinfo.cache` (the cache)
-
-
 
 I've been doing some [work on custom URL handlers](https://github.com/nbeaver/thunderlink-install-guide)
 lately, so I've adapted some of that for this purpose.
