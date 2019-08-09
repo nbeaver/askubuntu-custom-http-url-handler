@@ -14,7 +14,7 @@ depending on the application / library the application uses:
 
 - `~/.config/mimeapps.list` (the right place to make changes)
 - `~/.local/share/application/mimeapps.list` (the deprecated location)
-- `~/.local/share/application/default.list` (the older deprecated location)
+- `~/.local/share/application/defaults.list` (the older deprecated location)
 - `~/.local/share/applications/mimeinfo.cache` (the cache)
 
 
@@ -173,7 +173,8 @@ Here are the instructions:
         X-MultipleArgs=false
         Type=Application
         Terminal=false
-        MimeType=x-scheme-handler/http
+        NoDisplay=true
+        MimeType=x-scheme-handler/http;x-scheme-handler/https
 
    Either via `desktop-file-install`:
 
@@ -188,7 +189,13 @@ Here are the instructions:
    These are the most important lines in the desktop file:
 
         Exec=http_url_handler.py %u
-        MimeType=x-scheme-handler/http
+        MimeType=x-scheme-handler/http;x-scheme-handler/https
+
+0. Make the desktop file executable.
+
+        $ chmod $HOME/.local/share/applications/http-url-handler.desktop
+
+   This is [necessary because of a security precaution](https://askubuntu.com/questions/419610/permission-of-a-desktop-file).
 
 0. Register the desktop file with the
    `x-scheme-handler/http` and `x-scheme-handler/https` mimetypes.

@@ -6,4 +6,5 @@ Exec=http_url_handler.py %u
 X-MultipleArgs=false
 Type=Application
 Terminal=false
-MimeType=x-scheme-handler/http
+NoDisplay=true
+MimeType=x-scheme-handler/http;x-scheme-handler/https
