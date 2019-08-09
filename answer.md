@@ -193,7 +193,7 @@ Here are the instructions:
 
 0. Make the desktop file executable.
 
-        $ chmod $HOME/.local/share/applications/http-url-handler.desktop
+        $ chmod +x $HOME/.local/share/applications/http-url-handler.desktop
 
    This is [necessary because of a security precaution](https://askubuntu.com/questions/419610/permission-of-a-desktop-file).
 
