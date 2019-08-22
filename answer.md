@@ -116,7 +116,7 @@ Here are the instructions:
    particularly the executable for `brave` (I haven't used it, so I don't know)
    and the hostname in the `if parsed.hostname` part.
 
-0. Test the script.
+0. Test the script from the current directory.
 
    This should open with Firefox:
        
@@ -151,7 +151,7 @@ Here are the instructions:
         $ type -a http_url_handler.py 
         bash: type: http_url_handler.py: not found
 
-0. Test the script.
+0. Test the script from your home directory.
 
    This should open in Chromium:
 
